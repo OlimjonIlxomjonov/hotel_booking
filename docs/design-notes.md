@@ -9,3 +9,8 @@
 
  ## Activity traces
  Omar R8 15-15 Nov ->  False (no sharing a night) -> Reservation Confirmed -> Confirmation Email Sent! -> Accapted
+
+
+ # P04 Design Notes
+ ## Refactoring
+ Three of the classes should be refcatored: EmailSender to EmailNotificationsender `cause The name changes; every booking gives the same result. Move DateRange into its own file reason: The code is in a different place; it does the same thing.Make BookingService accept an interface instead of a concrete class reason: The demo still prints the same nine lines. Also there are 2 Classes that won't be refactored they are Fix the race so Omar gets Unavailable, and Add SMS confirmations.
